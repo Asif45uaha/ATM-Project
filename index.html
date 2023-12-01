@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ATM</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="heading"><h1>ATM</h1></div>
+
+      <!-- pin page -->
+
+      <div class="main-pin">
+        <p class="wrong-pin-msg" style="color: white"></p>
+        <div class="pin">
+          <input
+            type="text"
+            placeholder="Enter Your Pin(4)"
+            class="pin-input"
+          />
+          <button>Enter</button>
+        </div>
+        <div style="display: none">
+          <button class="back-btn">Back</button>
+        </div>
+      </div>
+
+      <!-- main Dashboard -->
+
+      <div class="main" style="display: none">
+        <span style="color: white; font-size: 15px">Welcome User!</span>
+        <span style="color: white; font-size: 20px"
+          >Dear User Please Select any Option Below :
+        </span>
+        <span style="color: wheat" class="main-msg"></span>
+        <div class="first">
+          <button class="main-btn" onclick="withdraw()">
+            Withdraw Balance
+          </button>
+          <button class="main-btn" onclick="deposit()">Deposit Money</button>
+        </div>
+        <div class="second">
+          <button class="main-btn" onclick="checkBalance()">
+            Balance Enquiry
+          </button>
+          <button class="main-btn" onclick="applyLoan()">Apply For Loan</button>
+        </div>
+        <div class="third">
+          <button class="goback" onclick="goBack()">Cancel</button>
+        </div>
+      </div>
+
+      <!-- balance Enquiry -->
+
+      <div class="balance-enquiry" style="display: none">
+        <p class="balance-stmt"></p>
+        <button class="dashboard-btn" onclick="gotoDashboard()">
+          go to Dashboard
+        </button>
+      </div>
+
+      <!-- Withdraw Balance -->
+
+      <div class="withdraw" style="display: none">
+        <ul style="color: white; font-size: 15px">
+          note:-
+          <li>Amount less than 500 is not withdrawable</li>
+          <li>Amount greater Than 20000 is not withdrawable</li>
+        </ul>
+        <div class="first">
+          <input
+            type="text"
+            placeholder="Enter Amount"
+            class="withdraw-input"
+          />
+          <button class="wdraw-btn" onclick="withdraw()">Withdraw</button>
+        </div>
+        <div class="second">
+          <p class="wdraw-stmt"></p>
+          <p class="acc-summary"></p>
+        </div>
+        <div class="third">
+          <button class="dashboard-btn" onclick="dashboardFromwdraw()">
+            go to Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Deposit Section -->
+
+      <div class="deposit" style="display: none">
+        <div class="first">
+          <input
+            type="text"
+            placeholder="Enter deposit Amount"
+            class="deposit-input"
+          />
+          <button class="deposit-btn" onclick="deposit()">Deposit</button>
+        </div>
+        <div class="second">
+          <p class="deposit-stmt"></p>
+          <p class="deposit-summary"></p>
+        </div>
+        <div class="third">
+          <button class="dashboard-btn" onclick="dashboardFromdeposit()">
+            go to Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Loan section -->
+
+      <div class="loan" style="display: none">
+        <span style="color: white"
+          >Dear Customer Apply for a Document less Loan</span
+        >
+        <span style="color: white"
+          >Get Loan Amount Upto 1 Lakh in just couple of seconds</span
+        >
+        <div class="first">
+          <input
+            type="text"
+            placeholder="Enter loan Amount"
+            class="loan-input"
+          />
+          <button class="loan-btn" onclick="applyLoan()">Apply</button>
+        </div>
+        <div class="second">
+          <p class="loan-stmt"></p>
+        </div>
+        <div class="third">
+          <button class="dashboard-btn" onclick="dashboardFromloan()">
+            go to Dashboard
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

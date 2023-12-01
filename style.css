@@ -1,0 +1,228 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 100vh;
+  width: 100%;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  background-color: crimson;
+  width: 100%;
+  box-shadow: 10px 10px 12px rgb(159, 60, 80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
+  color: white;
+}
+.main-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: crimson;
+  box-shadow: 10px 10px 12px rgb(159, 60, 80);
+  height: 100%;
+  width: 100%;
+}
+
+.pin input {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+}
+.pin input::placeholder {
+  font-size: 20px;
+}
+.pin input:focus {
+  background-color: rgb(208, 201, 201);
+}
+
+.pin button {
+  padding: 10px 20px;
+  background: #000;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.pin button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s ease-in;
+}
+.first,
+.second {
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+  justify-content: space-around;
+}
+.main-btn,
+.dashboard-btn,
+.goback {
+  padding: 15px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+  text-align: center;
+}
+
+.main-btn:hover,
+.dashboard-btn:hover,
+.goback:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.balance-enquiry {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.withdraw .first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.withdraw .first input {
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+}
+.withdraw .first input::placeholder {
+  font-size: 20px;
+}
+.withdraw .first input:focus {
+  background-color: rgb(208, 201, 201);
+}
+.withdraw .first button {
+  padding: 15px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.withdraw .first button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.withdraw .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  gap: 10px;
+  border: 2px solid grey;
+  width: 50%;
+  height: 30vh;
+}
+
+.deposit .first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.deposit .first input {
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+}
+.deposit .first input::placeholder {
+  font-size: 15px;
+}
+.deposit .first input:focus {
+  background-color: rgb(208, 201, 201);
+}
+.deposit .first button {
+  padding: 15px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.deposit .first button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.deposit .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  gap: 10px;
+  border: 2px solid grey;
+  width: 50%;
+  height: 30vh;
+}
+
+.loan .first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.loan .first input {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+}
+.loan .first input::placeholder {
+  font-size: 15px;
+}
+.loan .first input:focus {
+  background-color: rgb(208, 201, 201);
+}
+.loan .first button {
+  padding: 15px 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+.loan .first button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.loan .second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  gap: 10px;
+  border: 2px solid grey;
+  width: 50%;
+  height: 30vh;
+}
